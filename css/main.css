@@ -1,0 +1,35 @@
+/* 폰트적용 */
+
+/* CSS연결 링크 */
+@import url("header.css");
+
+/* css초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  /* font-family: "Noto Sans KR", sans-serif; */
+}
+/* 공통영역 */
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: rgb(255, 196, 196); */
+}
+.wrap {
+  position: relative;
+}

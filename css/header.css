@@ -1,3 +1,123 @@
+/* 공통영역 */
 .wrap {
   width: 100%;
   background-color: aqua;
+}
+.inner {
+  padding: 20px 30px;
+  width: 100%;
+  /* max-width: 1520px; */
+  /* margin: 0 auto; */
+  /* background-color: rgb(255, 196, 196); */
+}
+/* 상단배너 */
+.top_banner {
+  width: 100%;
+  height: 40px;
+  background-color: #b8002f;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+.top_banner a {
+  color: white;
+  font-size: 14px;
+}
+/* 메뉴바 전체 */
+.header {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  z-index: 10;
+}
+.header-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.header_list {
+  width: 100%;
+}
+/* 헤더왼쪽 */
+.hamburger_btn {
+  width: 60px;
+  font-size: 16px;
+}
+.header_left {
+  display: flex;
+  width: 467px;
+  /* background-color: antiquewhite; */
+}
+.header_left .header_list ul {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  justify-content: space-around;
+}
+.header_left .header_list ul li:first-child {
+  position: relative;
+  padding-left: 28px;
+}
+.header_left .header_list ul li:first-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background-color: white;
+}
+/* 헤더로고 */
+.hear_logo {
+  width: 260px;
+}
+.hear_logo img {
+  width: 100%;
+  display: block;
+}
+/* 헤더오른쪽 */
+.header_right {
+  display: flex;
+  align-items: center;
+  width: 467px;
+  /* background-color: antiquewhite; */
+}
+.header_right .header_list ul {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-around;
+}
+.header_right .header_list ul li:last-child {
+  position: relative;
+  padding-right: 28px;
+}
+
+.header_right .header_list ul li:last-child::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background-color: white;
+}
+/* 헤더아이콘 */
+.header_icons {
+  width: 38%;
+  gap: 28px;
+  display: flex;
+}
+.header_icons a {
+  display: block;
+  width: calc(100% / 3);
+}
+.header_icons img {
+  width: 100%;
+  display: block;
+  filter: brightness(0) invert(1);
+}

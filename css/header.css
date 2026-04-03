@@ -61,7 +61,7 @@
   position: relative;
   padding-left: 28px;
 }
-.header_left .header_list ul li:first-child::before {
+.header_left .header_list > ul > li:first-child::before {
   content: "";
   position: absolute;
   left: 0;
@@ -121,3 +121,5 @@
   display: block;
   filter: brightness(0) invert(1);
 }
+/* 호버영역 */
+/* 부모 */

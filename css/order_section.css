@@ -46,15 +46,18 @@
 /* 텍스트 영역 */
 .overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  color: white;
+  inset: 0;
   z-index: 2;
-}
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+  padding: 0 30px;
+}
 .overlay h3 {
   font-size: 38px;
   font-weight: 500;
@@ -62,9 +65,10 @@
 }
 
 .overlay p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.7;
   margin-bottom: 35px;
+  min-height: 130px;
 }
 
 /* 버튼 */
@@ -78,6 +82,7 @@
   font-size: 22px;
   font-weight: bold;
   transition: 0.3s;
+  margin-top: 30px;
 }
 
 /* 버튼 hover */

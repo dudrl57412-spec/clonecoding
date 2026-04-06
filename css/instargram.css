@@ -1,0 +1,71 @@
+.instargram {
+  background: #f5f5f5;
+  padding: 60px 40px;
+  padding: 140px 100px;
+}
+
+.instargram-top {
+  margin-bottom: 30px;
+}
+
+.instargram-top h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #111;
+  font-family: "BJ Cree", serif;
+}
+
+.instargram-top a {
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  font-family: "BJ Cree", serif;
+}
+
+.insta-grid ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /*repeat(개수, 비율)*/
+  gap: 15px;
+}
+
+.insta-grid li {
+  overflow: hidden;
+}
+
+.insta-grid li a {
+  display: block;
+}
+
+.insta-grid li img {
+  width: 100%;
+  display: block;
+  transition: 0.4s ease;
+  aspect-ratio: 1 / 1; /*이미지 크기 다 달라도 정사각형 유지됨*/
+  object-fit: cover; /*이미지 크기 다 달라도 정사각형 유지됨*/
+}
+
+.insta-grid li img:hover {
+  transform: scale(1.05);
+}
+
+.insta-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.insta-btn a {
+  display: inline-block;
+  padding: 14px 45px;
+  border: 1px solid #c8a97e;
+  color: #c8a97e;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+   font-family: "BJ Cree", serif;
+}
+
+.insta-btn a:hover {
+  background: #c8a97e;
+  color: #fff;
+}

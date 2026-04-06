@@ -23,7 +23,17 @@
     />
     <link rel="manifest" href="images/favicon (2)/site.webmanifest" />
     <title>PARIS CROISSANT</title>
+    <!-- swiper css -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- 파일연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/mian.js" defer></script>
   </head>
   <body>
     <div class="wrap">
@@ -88,14 +98,14 @@
           <div class="header_right">
             <div class="header_list">
               <ul class="gnb">
-                 <li class="menu-item">
+                <li class="menu-item">
                   <a href="#">매장 안내</a>
                   <ul class="depth2">
                     <li><a href="#">매장 찾기</a></li>
                   </ul>
                 </li>
                 <li><a href="#">새 소식</a></li>
-                 <li class="menu-item">
+                <li class="menu-item">
                   <a href="#">커뮤니티</a>
                   <ul class="depth2">
                     <li><a href="#">공지사항</a></li>
@@ -120,16 +130,64 @@
       <!-- 메인 -->
       <!-- 메인 비주얼 -->
       <section class="main_visual">
-        <div class="main_text">
-          <h2>No.1 EGG</h2>
-          <p>
-            올림픽공원점에서만 만나볼 수 있는 No.1제품, <br />
-            난각번호 1번 자유방목 유정란으로 만든 동물 복지 제품을 만나보세요.
-          </p>
-          <span>
-            최고의 품질과 맛으로 선보이는 No.1 EGG 제품은<br />
-            오직 파리크라상 올림픽공원점에서만 만나보실 수 있습니다.
-          </span>
+        <div class="swiper visual-sw">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/main1/main_bnr4.jpg" alt="메인비주얼" />
+
+              <div class="main_text">
+                <h2>No.1 EGG</h2>
+                <p>
+                  올림픽공원점에서만 만나볼 수 있는 No.1제품, <br />
+                  난각번호 1번 자유방목 유정란으로 만든 동물 복지 제품을
+                  만나보세요.
+                </p>
+                <span>
+                  최고의 품질과 맛으로 선보이는 No.1 EGG 제품은<br />
+                  오직 파리크라상 올림픽공원점에서만 만나보실 수 있습니다.
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main1/main_bnr1.jpg" alt="메인비주얼" />
+
+              <div class="main_text">
+                <h2>Premium Catering Box</h2>
+                <p>
+                  엄선한 고급 원료와 전문 쉐프가 매장에서 직접 만드는 <br />
+                  파리크라상 케이터링 박스로 소중한 시간을 더욱 빛나게
+                  만들어보세요.
+                </p>
+                <span>
+                  내가 원하는 구성으로 주문할 수 있는 다채로운 케이터링
+                  메뉴로<br />
+                  가족모임, 직장 내 행사, 홈파티를 더욱 편하게 즐기실 수
+                  있습니다.
+                </span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/main1/main_bnr2.jpg" alt="메인비주얼" />
+
+              <div class="main_text">
+                <h2>Premium Gift Set</h2>
+                <p>
+                  남다른 기술력을 기반으로 완성된 파리크라상 선물세트로<br />
+                  소중한 분에게 마음을 전달해보세요.
+                </p>
+                <span>
+                  프랑스산 버터, 국내산 꿀과 목초란 등 엄선한 고급 원료와
+                  <br />
+                  프리미엄 선물 포장 패키지로 정성스럽게 포장하여
+                  배송해드립니다.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 버튼 -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </section>
       <!-- 바로가기 -->

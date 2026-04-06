@@ -23,7 +23,7 @@
 
 .news_list {
   display: flex;
-  gap: 250px;
+  gap: 200px;
 }
 
 .news_list li {

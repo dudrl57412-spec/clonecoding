@@ -1,43 +1,71 @@
-/* 메인비주얼 */
+/* 메인비주얼 전체 */
 .main_visual {
   width: 100%;
-  height: 100vh;
-  background-image: url("../images/main1/main_bnr4.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* swiper */
+.visual-sw {
+  width: 100%;
+  height: 100%;
+}
+
+/* slide */
+.visual-sw .swiper-slide {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
-.main_visual::before {
+/* 이미지 꽉 채우기 */
+.visual-sw .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 검은 오버레이 */
+.visual-sw .swiper-slide::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
+/* 텍스트 */
 .main_text {
   position: absolute;
   left: 60px;
   bottom: 100px;
   color: white;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main_text h2 {
-  font-size: 30px;
+  font-size: 48px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
 .main_text p {
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .main_text span {
   display: block;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.6;
+}
+
+/* swiper 버튼 */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  z-index: 3;
 }

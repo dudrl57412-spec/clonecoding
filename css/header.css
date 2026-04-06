@@ -1,7 +1,7 @@
 /* 공통영역 */
 .wrap {
   width: 100%;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .inner {
   padding: 20px 30px;
@@ -57,17 +57,17 @@
   font-size: 16px;
   justify-content: space-around;
 }
-.header_left .header_list ul li:first-child {
+.header_left .header_list > ul > li:first-child {
   position: relative;
+  padding-left: 35px;
 }
 .header_left .header_list > ul > li:first-child::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 4px; /* 직접 조정 */
   width: 1px;
-  height: 14px;
+  height: 16px;
   background-color: white;
 }
 /* 헤더로고 */

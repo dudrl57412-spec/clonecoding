@@ -87,6 +87,6 @@
 
 /* 버튼 hover */
 .overlay a:hover {
-  background: black;
+  background: #c8a97e;
   color: white;
 }

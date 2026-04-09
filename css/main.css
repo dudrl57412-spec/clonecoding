@@ -12,6 +12,9 @@
 @import url("news.css");
 @import url("order_section.css");
 @import url("instargram.css");
+@import url("footer.css");
+@import url("quick.css");
+@import url("responsive.css");
 /* css초기화 */
 * {
   margin: 0;

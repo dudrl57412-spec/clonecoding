@@ -21,6 +21,7 @@
   top: 0;
   left: 0;
   z-index: 20;
+  /* background-color: transparent; */
 }
 .top_banner a {
   color: white;
@@ -28,10 +29,11 @@
 }
 /* 메뉴바 전체 */
 .header {
-  position: absolute;
+  position: fixed;
   top: 30px;
   width: 100%;
   z-index: 10;
+  transition: all 0.3s;
 }
 .header-inner {
   display: flex;
@@ -71,12 +73,15 @@
   background-color: white;
 }
 /* 헤더로고 */
-.hear_logo {
-  width: 260px;
+.header_logo {
+  width: 300px;
 }
-.hear_logo img {
-  width: 100%;
+
+.header_logo img {
+  width: 70%;
+  margin-left: 45px;
   display: block;
+  height: auto;
 }
 /* 헤더오른쪽 */
 .header_right {
